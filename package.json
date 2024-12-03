@@ -10,7 +10,8 @@
     "preview": "vite preview",
     "cypress:open": "cypress open",
     "cy:unit": "cypress run --component",
-    "cy:e2e": "cypress run --e2e"
+    "cy:e2e": "cypress run --e2e",
+    "test": "jest"
   },
   "dependencies": {
     "@testing-library/jest-dom": "^6.6.3",
