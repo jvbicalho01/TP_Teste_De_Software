@@ -1,0 +1,16 @@
+.colors {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 0 10px;
+}
+
+.colors_text {
+  margin-right: 10px;
+}
+
+.color {
+  border-radius: 100%;
+  height: 28px;
+  width: 28px;
+}
