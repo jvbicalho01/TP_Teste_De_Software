@@ -1,8 +1,13 @@
-# React + Vite
+## Membros do Grupo
+- João Pedro Reis
+- João Vítor Bicalho da Silva
+- Lucas Pereira Carvalho
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Descrição do Sistema
+Trata-se de um simples sistema de tarefas baseado no TodoList. Sendo assim, o usuário consegue criar, editar e deletar tarefas. Além disso há a possibilidade de organizar as tarefas em grupos.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tecnologias
+- React
+- HTML
+- CSS
+- Cypress
