@@ -1,5 +1,5 @@
 ## Membros do Grupo
-- João Pedro Reis
+- João Pedro Reis Teclo de Miranda
 - João Vítor Bicalho da Silva
 - Lucas Pereira Carvalho
 
