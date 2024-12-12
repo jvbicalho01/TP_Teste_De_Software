@@ -11,6 +11,7 @@ const Filter = ({ filter, setFilter, setSort }) => {
             value={filter}
             onChange={(e) => setFilter(e.target.value)}
             data-cy="status-select"
+            data-testid="status-select"
           >
             <option value="All" data-cy="text-all">
               Todas
@@ -25,10 +26,18 @@ const Filter = ({ filter, setFilter, setSort }) => {
         </div>
         <div>
           <p data-cy="filter-description">Ordem alfabética:</p>
-          <button data-cy="asc-button" onClick={() => setSort("Asc")}>
+          <button
+            data-cy="asc-button"
+            data-testid="asc-button"
+            onClick={() => setSort("Asc")}
+          >
             Asc
           </button>
-          <button data-cy="desc-button" onClick={() => setSort("Desc")}>
+          <button
+            data-cy="desc-button"
+            data-testid="desc-button"
+            onClick={() => setSort("Desc")}
+          >
             Desc
           </button>
         </div>
