@@ -64,6 +64,7 @@ const TodoForm = ({ addTodo }) => {
           onChange={(e) => setCategory(e.target.value)}
           value={category}
           data-cy="select-category"
+          data-testid="select-category"
         >
           <option value="" data-cy="todo-form-select-category">
             Selecione uma categoria
@@ -87,6 +88,7 @@ const TodoForm = ({ addTodo }) => {
               return (
                 <button
                   data-cy="color"
+                  data-testid="color"
                   className="color"
                   key={index}
                   style={{ backgroundColor: `${item}` }}
