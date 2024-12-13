@@ -23,7 +23,6 @@ jobs:
           node-version: '>=20.0.0'
           cache: 'npm'
 
-      - name: Run unit tests with Cypress
-        uses: cypress-io/github-action@v6
-        with:
-          component: true
+      - name: Jest GitHub Action
+        uses: willcaul/jest-github-action@v1.0.2
+            
