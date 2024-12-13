@@ -1,27 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="27" failures="0" errors="0" time="5.043">
-  <testsuite name="TodoForm Component" errors="0" failures="0" skipped="0" timestamp="2024-12-13T22:33:16" time="2.473" tests="5">
-    <testcase classname="TodoForm Component renders the todo form component" name="TodoForm Component renders the todo form component" time="0.072">
+<testsuites name="jest tests" tests="30" failures="0" errors="0" time="5.321">
+  <testsuite name="Todo Component" errors="0" failures="0" skipped="0" timestamp="2024-12-13T22:37:05" time="2.659" tests="12">
+    <testcase classname="Todo Component renders the todo component" name="Todo Component renders the todo component" time="0.06">
     </testcase>
-    <testcase classname="TodoForm Component calls addTodo when form is submitted with valid data" name="TodoForm Component calls addTodo when form is submitted with valid data" time="0.039">
+    <testcase classname="Todo Component calls completeTodo when complete button is clicked" name="Todo Component calls completeTodo when complete button is clicked" time="0.02">
     </testcase>
-    <testcase classname="TodoForm Component shows alert when title is missing" name="TodoForm Component shows alert when title is missing" time="0.012">
+    <testcase classname="Todo Component calls removeTodo when remove button is clicked" name="Todo Component calls removeTodo when remove button is clicked" time="0.005">
     </testcase>
-    <testcase classname="TodoForm Component shows alert when category is missing" name="TodoForm Component shows alert when category is missing" time="0.012">
+    <testcase classname="Todo Component applies the correct background color" name="Todo Component applies the correct background color" time="0.034">
     </testcase>
-    <testcase classname="TodoForm Component shows alert when color is missing" name="TodoForm Component shows alert when color is missing" time="0.011">
+    <testcase classname="Todo Component applies line-through style when todo is completed" name="Todo Component applies line-through style when todo is completed" time="0.008">
+    </testcase>
+    <testcase classname="Todo Component calls completeTodo multiple times on multiple clicks" name="Todo Component calls completeTodo multiple times on multiple clicks" time="0.006">
+    </testcase>
+    <testcase classname="Todo Component calls removeTodo multiple times on multiple clicks" name="Todo Component calls removeTodo multiple times on multiple clicks" time="0.006">
+    </testcase>
+    <testcase classname="Todo Component renders the todo with different text and category" name="Todo Component renders the todo with different text and category" time="0.005">
+    </testcase>
+    <testcase classname="Todo Component renders without crashing when no color is provided" name="Todo Component renders without crashing when no color is provided" time="0.004">
+    </testcase>
+    <testcase classname="Todo Component renders correctly when category is empty" name="Todo Component renders correctly when category is empty" time="0.004">
+    </testcase>
+    <testcase classname="Todo Component renders without crashing when completeTodo is not provided" name="Todo Component renders without crashing when completeTodo is not provided" time="0.003">
+    </testcase>
+    <testcase classname="Todo Component renders without crashing when removeTodo is not provided" name="Todo Component renders without crashing when removeTodo is not provided" time="0.004">
     </testcase>
   </testsuite>
-  <testsuite name="Filter Component" errors="0" failures="0" skipped="0" timestamp="2024-12-13T22:33:16" time="2.582" tests="9">
-    <testcase classname="Filter Component renders the filter component" name="Filter Component renders the filter component" time="0.062">
+  <testsuite name="Filter Component" errors="0" failures="0" skipped="0" timestamp="2024-12-13T22:37:05" time="2.716" tests="9">
+    <testcase classname="Filter Component renders the filter component" name="Filter Component renders the filter component" time="0.064">
     </testcase>
-    <testcase classname="Filter Component calls setFilter when filter dropdown is changed" name="Filter Component calls setFilter when filter dropdown is changed" time="0.014">
+    <testcase classname="Filter Component calls setFilter when filter dropdown is changed" name="Filter Component calls setFilter when filter dropdown is changed" time="0.02">
     </testcase>
-    <testcase classname="Filter Component calls setSort when Asc button is clicked" name="Filter Component calls setSort when Asc button is clicked" time="0.013">
+    <testcase classname="Filter Component calls setSort when Asc button is clicked" name="Filter Component calls setSort when Asc button is clicked" time="0.007">
     </testcase>
     <testcase classname="Filter Component calls setSort when Desc button is clicked" name="Filter Component calls setSort when Desc button is clicked" time="0.005">
     </testcase>
-    <testcase classname="Filter Component dropdown starts with the correct value" name="Filter Component dropdown starts with the correct value" time="0.007">
+    <testcase classname="Filter Component dropdown starts with the correct value" name="Filter Component dropdown starts with the correct value" time="0.006">
     </testcase>
     <testcase classname="Filter Component buttons maintain the correct functionality after multiple interactions" name="Filter Component buttons maintain the correct functionality after multiple interactions" time="0.007">
     </testcase>
@@ -32,34 +46,26 @@
     <testcase classname="Filter Component dropdown options have the correct data attributes" name="Filter Component dropdown options have the correct data attributes" time="0.116">
     </testcase>
   </testsuite>
-  <testsuite name="Todo Component" errors="0" failures="0" skipped="0" timestamp="2024-12-13T22:33:16" time="2.778" tests="12">
-    <testcase classname="Todo Component renders the todo component" name="Todo Component renders the todo component" time="0.074">
+  <testsuite name="TodoForm Component" errors="0" failures="0" skipped="0" timestamp="2024-12-13T22:37:05" time="2.993" tests="8">
+    <testcase classname="TodoForm Component renders the todo form component" name="TodoForm Component renders the todo form component" time="0.112">
     </testcase>
-    <testcase classname="Todo Component calls completeTodo when complete button is clicked" name="Todo Component calls completeTodo when complete button is clicked" time="0.014">
+    <testcase classname="TodoForm Component calls addTodo when form is submitted with valid data" name="TodoForm Component calls addTodo when form is submitted with valid data" time="0.034">
     </testcase>
-    <testcase classname="Todo Component calls removeTodo when remove button is clicked" name="Todo Component calls removeTodo when remove button is clicked" time="0.006">
+    <testcase classname="TodoForm Component shows alert when title is missing" name="TodoForm Component shows alert when title is missing" time="0.014">
     </testcase>
-    <testcase classname="Todo Component applies the correct background color" name="Todo Component applies the correct background color" time="0.042">
+    <testcase classname="TodoForm Component shows alert when category is missing" name="TodoForm Component shows alert when category is missing" time="0.011">
     </testcase>
-    <testcase classname="Todo Component applies line-through style when todo is completed" name="Todo Component applies line-through style when todo is completed" time="0.008">
+    <testcase classname="TodoForm Component shows alert when color is missing" name="TodoForm Component shows alert when color is missing" time="0.014">
     </testcase>
-    <testcase classname="Todo Component calls completeTodo multiple times on multiple clicks" name="Todo Component calls completeTodo multiple times on multiple clicks" time="0.005">
+    <testcase classname="TodoForm Component renders all color options" name="TodoForm Component renders all color options" time="0.057">
     </testcase>
-    <testcase classname="Todo Component calls removeTodo multiple times on multiple clicks" name="Todo Component calls removeTodo multiple times on multiple clicks" time="0.005">
+    <testcase classname="TodoForm Component selects a background color when clicked" name="TodoForm Component selects a background color when clicked" time="0.016">
     </testcase>
-    <testcase classname="Todo Component renders the todo with different text and category" name="Todo Component renders the todo with different text and category" time="0.008">
-    </testcase>
-    <testcase classname="Todo Component renders without crashing when no color is provided" name="Todo Component renders without crashing when no color is provided" time="0.004">
-    </testcase>
-    <testcase classname="Todo Component renders correctly when category is empty" name="Todo Component renders correctly when category is empty" time="0.003">
-    </testcase>
-    <testcase classname="Todo Component renders without crashing when completeTodo is not provided" name="Todo Component renders without crashing when completeTodo is not provided" time="0.003">
-    </testcase>
-    <testcase classname="Todo Component renders without crashing when removeTodo is not provided" name="Todo Component renders without crashing when removeTodo is not provided" time="0.003">
+    <testcase classname="TodoForm Component does not submit form with missing fields" name="TodoForm Component does not submit form with missing fields" time="0.011">
     </testcase>
   </testsuite>
-  <testsuite name="App Component" errors="0" failures="0" skipped="0" timestamp="2024-12-13T22:33:18" time="0.434" tests="1">
-    <testcase classname="App Component renders initial todos" name="App Component renders initial todos" time="0.034">
+  <testsuite name="App Component" errors="0" failures="0" skipped="0" timestamp="2024-12-13T22:37:07" time="0.447" tests="1">
+    <testcase classname="App Component renders initial todos" name="App Component renders initial todos" time="0.045">
     </testcase>
   </testsuite>
 </testsuites>
