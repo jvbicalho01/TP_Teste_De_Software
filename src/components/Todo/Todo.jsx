@@ -1,6 +1,11 @@
 import "./Todo.css";
 
-const Todo = ({ todo, removeTodo, completeTodo, color }) => {
+const Todo = ({
+  todo,
+  removeTodo = () => {},
+  completeTodo = () => {},
+  color,
+}) => {
   return (
     <div
       className="todo"
@@ -10,10 +15,15 @@ const Todo = ({ todo, removeTodo, completeTodo, color }) => {
         backgroundColor: `${color}`,
       }}
       data-cy="todo"
+      data-testid="todo"
     >
       <div className="todo__content">
         <p data-cy="todo-content">{todo.text}</p>
-        <p data-cy="todo-category" className="category">
+        <p
+          data-cy="todo-category"
+          data-testid="todo-category"
+          className="category"
+        >
           {todo.category}
         </p>
       </div>
