@@ -25,6 +25,9 @@ jobs:
           node-version: '>=20.0.0'
           cache: 'npm'
 
+      - name: Install dependencies
+        run: npm install
+
       - name: Run tests
         run: npm test -- --json --outputFile=jest.results.json
 
