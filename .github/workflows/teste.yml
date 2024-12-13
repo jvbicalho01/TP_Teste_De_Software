@@ -25,6 +25,15 @@ jobs:
           node-version: '>=20.0.0'
           cache: 'npm'
 
+      - name: Run tests
+        run: npm test -- --json --outputFile=jest.results.json
+  
+      - name: Upload Jest results
+        uses: actions/upload-artifact@v2
+        with:
+          name: jest-results
+          path: jest.results.json
+
       - name: Jest GitHub Action
         uses: willcaul/jest-github-action@v1.0.2
         env: 
