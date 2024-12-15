@@ -75,4 +75,32 @@ describe("TodoForm Component", () => {
       "Você esqueceu de selecionar a cor!"
     );
   });
+
+  test("renders all color options", () => {
+    render(<TodoForm addTodo={mockAddTodo} />);
+    const colorButtons = screen.getAllByTestId("color");
+    expect(colorButtons.length).toBe(5);
+    expect(colorButtons[0]).toHaveStyle("background-color: #77172E");
+    expect(colorButtons[1]).toHaveStyle("background-color: #692B17");
+    expect(colorButtons[2]).toHaveStyle("background-color: #7C4A03");
+    expect(colorButtons[3]).toHaveStyle("background-color: #264D3B");
+    expect(colorButtons[4]).toHaveStyle("background-color: #256377");
+  });
+
+  test("selects a background color when clicked", () => {
+    render(<TodoForm addTodo={mockAddTodo} />);
+    const colorButtons = screen.getAllByTestId("color");
+    fireEvent.click(colorButtons[2]);
+    expect(colorButtons[2]).toHaveStyle("background-color: #7C4A03");
+  });
+
+  test("does not submit form with missing fields", () => {
+    render(<TodoForm addTodo={mockAddTodo} />);
+    fireEvent.change(screen.getByPlaceholderText("Digite o título"), {
+      target: { value: "" },
+    });
+    fireEvent.click(screen.getByText("Criar tarefa"));
+
+    expect(mockAddTodo).not.toHaveBeenCalled();
+  });
 });
