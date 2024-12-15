@@ -59,7 +59,6 @@ describe("Filter Component", () => {
     const descButton = screen.getByTestId("desc-button");
     const select = screen.getByTestId("status-select");
 
-    // Change filter and click buttons consecutively
     fireEvent.change(select, { target: { value: "Completed" } });
     fireEvent.click(ascButton);
     fireEvent.click(descButton);
