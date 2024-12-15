@@ -26,13 +26,13 @@ jobs:
       - name: Run tests
         run: npm test -- --json --outputFile=jest.results.json
 
-      - name: Upload coverage reports to Codecov
-        uses: codecov/codecov-action@v5
-        with: 
-          token: ${{ secrets.CODECOV_TOKEN }}
-
       - name: Jest GitHub Action
         uses: willcaul/jest-github-action@v1.0.2
         env: 
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          
+      - name: Upload coverage reports to Codecov
+        uses: codecov/codecov-action@v5
+        with: 
+          token: ${{ secrets.CODECOV_TOKEN }}
             
