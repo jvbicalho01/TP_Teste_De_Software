@@ -14,15 +14,5 @@ export default {
     "!src/index.js",
     "!src/serviceWorker.js",
   ],
-  coverageReporters: ["html", "text"],
-  reporters: [
-    "default",
-    [
-      "jest-junit",
-      {
-        outputDirectory: ".",
-        outputName: "jest.results.json",
-      },
-    ],
-  ],
+  coverageReporters: ["text", "cobertura"],
 };
